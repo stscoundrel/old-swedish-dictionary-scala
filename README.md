@@ -17,6 +17,9 @@ As Maven dependency.
 </dependency>
 ```
 
+
+For alternative install methods, see the [Maven Central Repo](https://search.maven.org/artifact/io.github.stscoundrel/oldswedish)
+
 ### Usage
 
 ```scala
@@ -33,6 +36,9 @@ println(entries(100).grammatical_aspect) // "v."
 println(entries(100).definitions)        // ["afbränna, genom eld förstöra. hans trähws the af brendhe  [...and more]]
 
 ```
+
+**Java interop**: Should you use this library with Java, you may need to make some minor adjustements. For example, Java may consider fields case class DictionaryEntry to be "private". You can get around this by calling them as getters, like `myEntry.headword()` instead of `myEntry.headword`
+
 
 Individual words are returned in format of:
 
