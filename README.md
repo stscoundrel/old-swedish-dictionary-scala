@@ -17,6 +17,36 @@ As Maven dependency.
 </dependency>
 ```
 
+### Usage
+
+```scala
+
+import io.github.stscoundrel.oldswedish.Dictionary
+import io.github.stscoundrel.oldswedish.DictionaryEntry
+
+val dictionary = new Dictionary()
+val entries = dictionary.getDictionary()
+
+println(entries(100).headword)           // "af bränna"
+println(entries(100).part_of_speech)     // ["vb"]
+println(entries(100).grammatical_aspect) // "v."
+println(entries(100).definitions)        // ["afbränna, genom eld förstöra. hans trähws the af brendhe  [...and more]]
+
+```
+
+Individual words are returned in format of:
+
+```scala
+{
+  headword: String,
+  partOfSpeech: Array[String],
+  grammaticalAspect: String,
+  information: String,
+  definitions: Array[String],
+  alternativeForms: Array[String],
+}
+```
+
 ### About "Dictionary of Old Swedish"
 
 _"Ordbok Öfver svenska medeltids-språket"_ dictionary was published in late 1884—1918 by K.F. Söderwall. Additional supplement to it was published in 1953—1973.
