@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.stscoundrel</groupId>
-  <artifactId>scalatemplate</artifactId>
+  <artifactId>oldswedish</artifactId>
   <version>0.1.0</version>
 
-  <name>scalatemplate</name>
-  <description>A simple Java/Maven template.</description>
-  <url>https://github.com/stscoundrel/scala-template</url>
+  <name>old-swedish-dictionary</name>
+  <description>Old Swedish Dictionary for Scala / Java. From K.F. Söderwall's Medieval Swedish Dictionary</description>
+  <url>https://github.com/stscoundrel/old-swedish-dictionary-scala</url>
 
   <developers>
     <developer>
@@ -25,9 +25,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/stscoundrel/scala-template.git</connection>
-    <developerConnection>scm:git:ssh://github.com:stscoundrel/scala-template.git</developerConnection>
-    <url>http://github.com/stscoundrel/scala-template/tree/master</url>
+    <connection>scm:git:git://github.com/stscoundrel/old-swedish-dictionary-scala.git</connection>
+    <developerConnection>scm:git:ssh://github.com:stscoundrel/old-swedish-dictionary-scala.git</developerConnection>
+    <url>http://github.com/stscoundrel/old-swedish-dictionary-scala/tree/master</url>
   </scm>
 
   <licenses>
@@ -116,6 +116,28 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.2</version>
+        <groupId>org.apache.maven.plugins</groupId>
+        <configuration>
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.scalatest</groupId>
+        <artifactId>scalatest-maven-plugin</artifactId>
+        <version>2.2.0</version>
+        <configuration>
+          <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+          <junitxml>.</junitxml>
+          <filereports>WDF TestSuite.txt</filereports>
+        </configuration>
+        <executions>
+          <execution>
+            <id>test</id>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
