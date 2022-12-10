@@ -1,4 +1,4 @@
-package io.github.stscoundrel.scalatemplate
+package io.github.stscoundrel.oldswedish
 
 import org.scalatest.funsuite.AnyFunSuite
 

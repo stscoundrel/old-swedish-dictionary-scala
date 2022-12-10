@@ -1,4 +1,4 @@
-package io.github.stscoundrel.scalatemplate
+package io.github.stscoundrel.oldswedish
 
 object App {
   def main(args: Array[String]): Unit = {
