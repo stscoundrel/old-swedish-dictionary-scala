@@ -64,7 +64,7 @@
     <dependency>
       <groupId>org.scalactic</groupId>
       <artifactId>scalactic_2.13</artifactId>
-      <version>3.3.0-SNAP3</version>
+      <version>3.3.0-SNAP4</version>
     </dependency>
     <dependency>
       <groupId>org.scalatest</groupId>
