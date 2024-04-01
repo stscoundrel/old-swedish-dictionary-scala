@@ -53,7 +53,7 @@
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
-      <version>2.13.12</version>
+      <version>2.13.13</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.gson</groupId>
@@ -116,11 +116,11 @@
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.12.1</version>
+        <version>3.13.0</version>
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.3</version>
+        <version>3.2.5</version>
         <groupId>org.apache.maven.plugins</groupId>
         <configuration>
           <skipTests>true</skipTests>
@@ -181,7 +181,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.2</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
