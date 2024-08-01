@@ -82,7 +82,7 @@
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>4.9.1</version>
+        <version>4.9.2</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -108,7 +108,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.6.1</version>
+        <version>3.6.2</version>
       </plugin>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
@@ -120,7 +120,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
         <groupId>org.apache.maven.plugins</groupId>
         <configuration>
           <skipTests>true</skipTests>
@@ -168,7 +168,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
