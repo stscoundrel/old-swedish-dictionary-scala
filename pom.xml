@@ -6,7 +6,7 @@
 
   <groupId>io.github.stscoundrel</groupId>
   <artifactId>oldswedish</artifactId>
-  <version>0.1.1</version>
+  <version>0.2.0</version>
 
   <name>old-swedish-dictionary</name>
   <description>Old Swedish Dictionary for Scala / Java. From K.F. Söderwall's Medieval Swedish Dictionary</description>
